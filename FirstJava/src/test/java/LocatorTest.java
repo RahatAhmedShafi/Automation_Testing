@@ -12,6 +12,9 @@ public class LocatorTest {
         driver.findElement(By.id("small-searchterms")).sendKeys("Laptop");
         // class locator
         driver.findElement(By.className("search-box-button")).click();
+        // Link text locator
+        driver.findElement(By.linkText("My account")).click();
+
         driver.manage().window().maximize();
         driver.quit();
     }
